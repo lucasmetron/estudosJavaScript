@@ -1,55 +1,35 @@
-/*var alunos = ["igor", "jose", "marcos", "mariana"];
-console.log(alunos);
-console.log(alunos.length)
-
-var aluno1 = "igor";
-var aluno2 = "jose";
-var aluno3 = "marcos";
-var aluno4 = "mariana";
-var aluno5 = "joana";
-
-console.log(aluno1);
-console.log(aluno2);
-console.log(aluno3);
-console.log(aluno4);
-console.log(aluno5);
-
-var alunos = ["igor", "jose", "marcos", "mariana", "joana" ];
-
-console.log(alunos[0]);
-console.log(alunos[1]);
-console.log(alunos[2]);
-console.log(alunos[3]);
-console.log(alunos[4]);
 
 
+/*function media(n1, n2){
+    var nota1 = n1;
+    var nota2 = n2;
+    var media = (nota1+ nota2) /2;
+    //console.log(media);
 
-var alunos = ["igor", "jose", "marcos", "mariana", 
-"joana", "Lucas", "lais", "selina" ];
-
-for(var i = 0; i < alunos.length; i++){
-
-    console.log(alunos[i]);
-
+    return media;
 }
 
 
-var alunos = ["igor", "jose", "marcos", "mariana", 
-"joana", "Lucas", "lais", "selina" ];
+var resultado1 = media(5,10);
+var resultado2 = media(8,4);
+var resultado3 = media(9,7);
 
-for(var i in alunos){
+console.log(resultado1+ " "+ resultado2+ " "+resultado3)*/
 
-    console.log(alunos[i]);
+
+function tabuada(n) {
+
+    var multiplicador = n;
+
+    for (var i = 1; i <= 10; i++) {
+        var resultado = n * i;
+        console.log(n + " vezes " + i + " é igual a " + resultado)
+        if (i == 10) {
+            console.log("acabou!")
+        } else { }
+    }
+
 }
 
-*/
-
-var alunos = ["igor", "jose", "marcos", "mariana", 
-"joana", "Lucas", "lais", "selina" ];
-
-for(var alunos of alunos){
-
-    console.log(alunos);
-}
-
-
+n = prompt("Digite o numero desejado para tabular:")
+tabuada(n);

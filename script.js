@@ -1,35 +1,99 @@
-
-
+//Nome do aluno - Nota 1 - Nota 2 - Media - Aprovado ou reprovado
 /*function media(n1, n2){
-    var nota1 = n1;
-    var nota2 = n2;
-    var media = (nota1+ nota2) /2;
-    //console.log(media);
+    return (n1+ n2) / 2;
+}
 
-    return media;
+function seletorAluno(nome){
+
+    var alunoselect;
+
+    for (i=0; i <= nomes.length; i++) {
+
+        if(nome != nomes[i] ){
+        } 
+        
+        else if (nome == nomes[i]) {
+            
+            alunoselect = nomes[i];
+        }
+        else if(nomes.leght -1 > i){
+            alunoselect = "Desconhecido"
+        }
+
+    }
+    
+   
+
+    return alunoselect;
 }
 
 
-var resultado1 = media(5,10);
-var resultado2 = media(8,4);
-var resultado3 = media(9,7);
 
-console.log(resultado1+ " "+ resultado2+ " "+resultado3)*/
+//console.log(media(7,8));
+console.log (seletorAluno("Bianca"));*/
+
+//Nome do aluno - Nota 1 - Nota 2 - Media - Aprovado ou reprovado
+
+var nomes = ["Lucas", "Jose", "Maria"];
+var notasA = [7.0, 6.5, 9.5];
+var notasB = [8.0, 7.0, 8.5];
+
+function media (n1 ,n2){
+    return (n1+n2)/2;
+}
+
+function passou(media){
 
 
-function tabuada(n) {
-
-    var multiplicador = n;
-
-    for (var i = 1; i <= 10; i++) {
-        var resultado = n * i;
-        console.log(n + " vezes " + i + " é igual a " + resultado)
-        if (i == 10) {
-            console.log("acabou!")
-        } else { }
+    if (media > 7){
+        return "Aprovado!"
+    } else {
+        return "Reprovado!"
     }
 
 }
 
-n = prompt("Digite o numero desejado para tabular:")
-tabuada(n);
+/*function juiz (m){
+
+    var status = "vazio"; 
+    
+    switch (m){
+
+        case m >= 6:
+            status = "Aprovado!" 
+        break;
+
+        case m >=5.9:
+            status = "Recuperação"
+        break;
+
+        case m < 5:
+            status = "Reprovado"
+            break;
+        
+        default:
+             console.log("Erro!");
+             break;
+
+    }       
+    
+    return status;
+}*/
+
+for (var index in nomes){
+
+    console.log(
+    nomes[index] + " " +
+    notasA[index] + " " + 
+    notasB[index] + " " +
+    "Sua média foi: "+ media(notasA[index], notasB[index]) + 
+    " Você está: " + passou(media(notasA[index], notasB[index]))
+    
+    );
+}
+
+
+
+
+
+

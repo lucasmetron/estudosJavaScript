@@ -59,7 +59,7 @@ alert("Antes N1 = "+n1+" | Agora n1 vale = "+invN1+"\n"+
 "Antes N2 = "+n2+" | Agora n2 vale = "+invN2)
 */
 
-
+/*
     //EXERCICIO 5
 var n1 = 70;
 var n2 = 9;
@@ -90,3 +90,37 @@ else  {
     alert ("Maior número: "+maior+"\n"+
     "menor numero: "+menor)
 }
+*/
+
+// EXERCICIO 6 
+var turno = prompt("Qual turno você estuda?")
+
+switch (turno) {
+
+    case "matutino":
+    case "Matutino":
+    case "M":
+    case "m":
+        alert("bom dia!")
+        break;
+
+    case "vespertino":
+    case "Vespertino":
+    case "v":
+    case "V":
+        alert("Boa tarde!")
+        break;
+
+    case "noturno":
+    case "Noturno":
+    case "n":
+    case "N":
+        alert("Boa noite!")
+        break;
+
+    default: alert("Turno Errado! ")
+        break;
+
+}
+
+

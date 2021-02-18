@@ -91,7 +91,7 @@ else  {
     "menor numero: "+menor)
 }
 */
-
+/*
 // EXERCICIO 6 
 var turno = prompt("Qual turno você estuda?")
 
@@ -122,5 +122,66 @@ switch (turno) {
         break;
 
 }
+*/
+
+/*DESCONTOS: 
+    IMPOSTO DE RENDA
+    INSS
+    CALCULAR FGTS
+*/
+
+    // EXERCICIO 7
+ /*   
+var salarioBruto = 3000;
+var salarioMenosIR ;
+var descontoIR ;1992
+
+if( salarioBruto <= 1903.98){
+    salarioMenosIR = salarioBruto;
+
+} else if (salarioBruto  <= 2826.65) {
+
+    let desconto = 0.075 * salarioBruto;
+    salarioMenosIR = salarioBruto - desconto;
+
+} else if (salarioBruto <=3571.05){
+
+    let desconto = 0.15 * salarioBruto;
+    salarioMenosIR = salarioBruto - desconto;
+
+} else if (salarioBruto <= 4664.8){
+
+    let desconto = 0.225 * salarioBruto;
+    salarioMenosIR = salarioBruto - desconto;
+
+} else {
+
+    let desconto = 0.275 * salarioBruto;
+    salarioMenosIR = salarioBruto - desconto;
+}
+
+alert(salarioMenosIR)
+
+*/
 
 
+    // EXERCICIO 8
+var resultado = 0;
+i = 0;
+var valores = [10,10]
+
+
+for (var i = 0 ; i < valores.length ; i++ ){
+    resultado = resultado + valores[i]
+}
+
+console.log(resultado)
+
+
+
+while (i < valores.length) {
+
+    resultado = resultado + valores[i];
+    i++;
+    console.log("O resultado é:  " +resultado)
+}
